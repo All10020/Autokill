@@ -1,0 +1,7 @@
+game.Players.PlayerAdded:Connect(function(player)
+	player.Chatted:Connect(function(message)
+		if message == "Kick me" then
+			player:Kick()
+		end
+	end)
+end)
